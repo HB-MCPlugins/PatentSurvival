@@ -1,0 +1,28 @@
+﻿# 특허 최대 보유 개수, 0이면 제한 없음
+# 보유 개수 초과 시 오래된 특허부터 만료됨
+max_patent_count: 10
+
+# 특허가 있는 아이템 제작 시 처분 방법
+# 1 : 제작 불가
+# 2 : 제작 시 특허 보유자에게 아이템 기부
+# 3 : 제작 시 재료와 결과물 전부 소멸
+patent_treatment: 1
+
+# 특허 불가 아이템 목록
+# 개발자 능지 이슈로 나무 판자 등의 아이템은 전부 등록을 해야합니다ㅠㅠ
+open_source_items: [
+  "minecraft:crafting_table",
+  "minecraft:stick"
+]
+
+# 새로운 특허 등록 시 전체메시지 여부
+broadcast_new_patent: true
+
+# 특허 만료 시 전체메시지 여부
+broadcast_patent_expiration: true
+
+# 특허 아이템을 만들어서 날아갈 시 메시지 여부
+# 0 : 메시지 없음
+# 1 : 특허 보유자와 제작자에게만 메시지
+# 2 : 전체메시지
+tea_bagging_message: 1

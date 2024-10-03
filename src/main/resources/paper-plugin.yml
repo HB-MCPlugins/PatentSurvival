@@ -1,0 +1,4 @@
+name: PatentSurvival
+version: '1.0-SNAPSHOT'
+main: com.hwibaek.patentSurvival.PatentSurvival
+api-version: '1.21'
