@@ -84,7 +84,7 @@ class PatentSurvival : JavaPlugin(), Listener {
                 trueCrafter.sendMessage(Component.text("${craftedMaterial.name}에 대한 특허가 등록되었습니다!"))
             }
             //특허를 너무 많이 갖고있으면 가장 오래된 특허 취소
-            if (patentsOwner[crafterId]!!.size > config.getInt("max_patent_count")) {
+            if (patentsOwner[crafterId]!!.size > config.getInt("max_patent_count") && config.getInt("max_patent_count") != 0) {
                 val old = patentsOwner[crafterId]!![0]
                 patents.remove(old)
                 patentsOwner[crafterId]!!.remove(old)
